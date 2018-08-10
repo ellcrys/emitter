@@ -15,4 +15,7 @@ func TestEventTypeCast(t *testing.T) {
 	expect(t, e.Float(5, 37.42), 37.42)
 	expect(t, e.String(6, "_"), "_")
 	expect(t, e.Bool(7, true), true)
+
+	expect(t, e.Get(0), 10)
+	expect(t, e.Get(2), "value")
 }

@@ -75,3 +75,8 @@ func (e Event) Bool(index uint, dflt ...bool) bool {
 	}
 	return d
 }
+
+// Get returns the argument at the specified index.
+func (e Event) Get(index uint) interface{} {
+	return e.Args[index]
+}
